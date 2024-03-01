@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="mainbox">
+      <h1 class="title"></h1>
+      <p>Benvenuto/a</p>
+      <form>
+        <label for="caffe"> tipo di caffè </label>
+        <select id="caffe">
+          <option value="espresso">espresso</option>
+          <option value="americano">americano</option>
+          <option value="cappuccino">cappuccino</option>
+        </select>
+
+        <label for="zucchero"> zucchero </label>
+        <input type="checkbox" id="zucchero" value="0.50" />
+
+        <label for="latte"> tipo di latte </label>
+        <select id="latte">
+          <option value="intero">intero</option>
+          <option value="scremato">scremato</option>
+          <option value="vegetale">vegetale</option>
+        </select>
+
+        <label for="panna"> panna </label>
+        <input type="checkbox" id="panna" value="1" />
+
+        <label for="aroma"> tipo di aroma </label>
+        <select id="aroma">
+          <option value="vaniglia">vaniglia</option>
+          <option value="caramello">caramello</option>
+          <option value="cioccolato">cioccolato</option>
+        </select>
+
+        <label for="codicesconto"></label>
+        <input type="text" />
+        <button id="button" type="button">calcola prezzo</button>
+      </form>
+
+      <div id="total-price"></div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
